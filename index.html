@@ -108,6 +108,89 @@
       .icon-box:hover ul li i {
         color: #fff;
       }
+      
+      /* Team Section Styles */
+#team {
+  padding: 60px 0;
+}
+
+#team .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-front h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-front span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-back {
+  background: #007bff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card-back p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.card-back .social {
+  margin-top: 10px;
+}
+
+.card-back .social a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.card-back .social a:hover {
+  color: #ffdd57;
+}
     </style>
     <!-- =======================================================
   * Template Name: NBK Learners Edutech Foundation
@@ -132,7 +215,7 @@
             max-height: none !important;
           "
         />
-        <h6>NBK Learners Edutech Foundation</h6>
+        <h4><b>NBK Learners Edutech Foundation</b></h4>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         <!-- </div> -->
@@ -153,11 +236,14 @@
             <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
 
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li>
-              <a class="getstarted scrollto" href="#about"
-                >Join Our Community</a
-              >
-            </li>
+<li>
+  <a class="getstarted" 
+     href="https://chat.whatsapp.com/JC0HCIpOlVQFj51i85n317" 
+     target="_blank">
+     Join Our Community
+  </a>
+</li>
+
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -173,11 +259,18 @@
           <div
             class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
           >
-            <h1 data-aos="fade-up">Don’t Just Code — Build It with Us!</h1>
+            <!-- <h1 data-aos="fade-up">Don’t Just Code — Build It with Us!</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">
               Empowering learners through affordable, job-oriented skill
               development.
-            </h2>
+            </h2> -->
+            
+                     <h1 data-aos="fade-up">From Code to Career — Let’s Build Your Future</h1>
+
+  <span>Learn industry-ready skills, work on real projects, and unlock opportunities — your skills are your future, and together, we’ll shape them for success.</span>
+
+<h2 data-aos="fade-up" data-aos-delay="400">
+<h2/>
             <div data-aos="fade-up" data-aos-delay="800">
               <a href="#about" class="btn-get-started scrollto" data-bs-toggle="modal" data-bs-target="#joinNowModal">Join Now</a>
               <br>
@@ -192,17 +285,17 @@
 
           
           </div>
-          <div
-            class="col-lg-6 order-1 order-lg-2 hero-img"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          >
-            <img
-              src="assets/img/Futuristic VR Portrait (1).png"
-              class="img-fluid animated"
-              alt=""
-            />
-          </div>
+         <div
+  class="col-lg-6 order-1 order-lg-2 hero-img"
+  data-aos="fade-left"
+  data-aos-delay="200"
+>
+  <video autoplay muted loop playsinline class="img-fluid animated">
+    <source src="assets/img/8342560-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
         </div>
       </div>
     </section>
@@ -1270,106 +1363,85 @@
       <!-- End Portfolio Section -->
 
       <!-- ======= Team Section ======= -->
-      <section id="team" class="team section-bg">
-        <div class="container">
-        <div class="section-title" data-aos="fade-up">
-  <h2>Meet Our Team</h2>
-  <p>Passionate tech experts dedicated to delivering innovative training and software solutions.</p>
-</div>
+   <section id="team" class="team section-bg">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Meet Our Team</h2>
+      <p>Passionate tech experts dedicated to delivering innovative training and software solutions.</p>
+    </div>
 
-
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img
-                    src="assets/img/team/team-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-<div class="member-info">
-  <h4>Nitesh Kudmethe</h4>
-  <span title="Mentor, Educator, Developer, Engineer, Professor">Founder | Mentor | Educator | Developer | Engineer | Professor</span>
-</div>
-
+    <div class="row">
+      <!-- Nitesh -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <h4>Nitesh Kudmethe</h4>
+              <span>Founder | Mentor | Educator | Developer | Engineer | Professor</span>
+            </div>
+            <div class="card-back">
+              <p>Email: niteshkudmethe18@gmail.com</p>
+              <!-- <p>LinkedIn: linkedin.com/in/nitesh</p> -->
+              <p>Phone: +91-7021674341</p>
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img
-                    src="assets/img/team/team-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              <div class="member-info">
-  <h4>Ritesh Kudmethe</h4>
-  <span title="Mentor, Educator, Engineer">Founder | Mentor | Educator | Engineer</span>
-</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img
-                    src="assets/img/team/team-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                             <div class="member-info">
-  <h4>Rupesh Kudmethe</h4>
-  <span title="Mentor, Educator, Engineer">Founder | Mentor | Educator | Doctor(Radiology)</span>
-</div>
-              </div>
-            </div>
-
-            <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img
-                    src="assets/img/team/team-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Ritesh -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <h4>Ritesh Kudmethe</h4>
+              <span>Founder | Mentor | Educator</span>
+            </div>
+            <div class="card-back">
+              <p>Email: riteshkudmethe92@gmail.com</p>
+              <!-- <p>LinkedIn: linkedin.com/in/ritesh</p> -->
+              <p>Phone: +91-9022547701</p>
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rupesh -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-front">
+              <h4>Rupesh Kudmethe</h4>
+              <span>Founder | Mentor | Educator</span>
+            </div>
+            <div class="card-back">
+              <p>Email: rkudmethe@rediffmail.com</p>
+              <!-- <p>LinkedIn: linkedin.com/in/rupesh</p> -->
+              <p>Phone: +91-9623061068</p>
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <!-- End Team Section -->
 
       <!-- ======= Pricing Section ======= -->
@@ -1610,62 +1682,95 @@
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+<form id="contact-form" role="form" class="php-email-form">
+  <div class="form-group">
+    <input
+      type="text"
+      name="name"
+      class="form-control"
+      id="name"
+      placeholder="Your Name"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="email"
+      class="form-control"
+      name="email"
+      id="email"
+      placeholder="Your Email"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      name="subject"
+      id="subject"
+      placeholder="Subject"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <textarea
+      class="form-control"
+      name="message"
+      rows="5"
+      placeholder="Message"
+      required
+    ></textarea>
+  </div>
+  <div class="my-3">
+    <div class="loading" style="display:none;">Loading</div>
+    <div class="error-message" style="display:none; color:red;"></div>
+    <div class="sent-message" style="display:none; color:green;">
+      Your message has been sent. Thank you!
+    </div>
+  </div>
+  <div class="text-center">
+    <button type="submit">Send Message</button>
+  </div>
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx7TQZl-EVVx5cJ1XCa0IZzuIyo6vro7_wJGxLwKv_5p-d-ANM1zKy1JSh66jorHvd3ag/exec';
+
+
+  document.getElementById('contact-form').addEventListener('submit', e => {
+    e.preventDefault();
+
+    document.querySelector('.loading').style.display = 'block';
+    document.querySelector('.error-message').style.display = 'none';
+    document.querySelector('.sent-message').style.display = 'none';
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value
+    };
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: JSON.stringify(formData)
+    })
+      .then(response => {
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.sent-message').style.display = 'block';
+        e.target.reset();
+      })
+      .catch(error => {
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.error-message').textContent = 'Something went wrong. Please try again!';
+        document.querySelector('.error-message').style.display = 'block';
+        console.error('Error!', error);
+      });
+  });
+</script>
+
+
             </div>
           </div>
         </div>
@@ -1695,7 +1800,8 @@
             <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
               <a href="#intro" class="scrollto">Home</a>
               <a href="#about" class="scrollto">About</a>
-              <a href="#">Privacy Policy</a>
+           <a href="policy.html">Privacy Policy</a>
+
               <a href="#">Terms of Use</a>
             </nav>
           </div>
